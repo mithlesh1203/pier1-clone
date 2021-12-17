@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Seller Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="top_nav_bar" class="top_nav center_text"> </div>
+
+  <!---Middle Nav Start-->
+  <div class="sticky_header">
+    <div class="page_header">
+      <div class="page_content">
+        <div>
+          <span><img src="images\search-icon.png" alt=""></span>
+          <span> <a href="#">STORES</a></span>
+          <span>
+            ₹ <button>INR V</button>
+          </span>
+        </div>
+        <div>
+          <!-- <span><a href="index.html"><img src="images\FE-Logo_1.png" alt="" id="logo"></a></span> -->
+        </div>
+        <div>
+          <span> <a href="accounts.html">ACCOUNT</a></span>
+          <span>
+            <a href="#">WISHLIST</a>
+          </span>
+          <span><a onclick="show_cart()"><img src="images\cart-icon.png" alt=""><span
+                id="cart_total">0</span></a></span>
+          <div id="cart_container">
+            <div id="cart_show">
+              <span><a onclick="close_cart()"><img src="images\cross-icon.svg" alt=""></a></span>
+            </div>
+
+            <span><a href="bagmine.html"><button>GO TO BAGS</button></a></span>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+  <!----Middle Nav End-->
+
+
+  <div class="best_seller_product" id="best_seller_product_786">
+    <div id="best_seller_page_h2">
+      <h2>
+        Bestseller Selection
+      </h2>
+    </div>
+    <div class="filter">
+      <button onclick="filter_form()"><span class="btn_arrow">FILTERS</span></button>
+      <select id="op" onchange="sort_products()">
+        <option value="">SORT BY</option>
+        <option value="low_first">PRICE (LOWEST FIRST)</option>
+        <option value="high_first">PRICE (HIGHEST FIRST)</option>
+      </select>
+
+    </div>
+    <div id="filter_options">
+      <input type="checkbox" name="facial" value="facial care" class="input_value">
+      <label for="facial"> FACIAL CARE</label><br>
+      <input type="checkbox" name="hair" value="hair care" class="input_value">
+      <label for="hair"> HAIR CARE</label><br>
+      <input type="checkbox" name="body" value="body care" class="input_value">
+      <label for="body"> BODY CARE</label><br>
+      <input type="checkbox" name="makeup" value="makeup" class="input_value">
+      <label for="makeup"> MAKEUP</label><br>
+      <input type="checkbox" name="gifts" value="gifts" class="input_value">
+      <label for="gifts"> GIFTS</label><br>
+      <input type="checkbox" name="rituals" value="rituals" class="input_value">
+      <label for="rituals">RITUALS</label><br>
+      <button onclick="filter_catergory()">Apply</button>
+    </div>
+    <div class="container">
+      <div id="best_product_info">
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="scripts\best-seller.js"></script>
